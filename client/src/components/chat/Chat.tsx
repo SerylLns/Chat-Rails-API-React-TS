@@ -1,12 +1,12 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { getCurrentChatroom } from "./api/chatroomRequest";
+import { getCurrentChatroom } from "../../api/chatroomRequest";
 import { ChatContainer, ChatTitle } from "./ChatStyle";
-import Message from "./components/message/Message";
-import MessageForm from "./components/message/MessageForm";
-import { setCurrentChatroom } from "./store/chatroomSlice";
-import { useAppDispatch, useAppSelector } from "./store/hooks";
+import Message from "../message/Message";
+import MessageForm from "../message/MessageForm";
+import { setCurrentChatroom } from "../../store/chatroomSlice";
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
 
 const Chat = () => {
   const { id } = useParams();

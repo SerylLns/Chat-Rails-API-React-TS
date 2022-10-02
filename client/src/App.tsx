@@ -2,7 +2,7 @@ import { ThemeProvider } from "@mui/material";
 import axios from "axios";
 import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Chat from "./Chat";
+import Chat from "./components/chat/Chat";
 import Home from "./Home";
 import SignInSide from "./Sign-in";
 import { useAppSelector } from "./store/hooks";

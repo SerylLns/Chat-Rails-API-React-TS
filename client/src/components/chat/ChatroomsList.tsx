@@ -13,8 +13,8 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useAppSelector } from "./store/hooks";
-import { chatroomType } from "./store/chatroomSlice";
+import { useAppSelector } from "../../store/hooks";
+import { chatroomType } from "../../store/chatroomSlice";
 import { useNavigate } from "react-router-dom";
 
 const navItems = ["Home", "About", "Contact"];

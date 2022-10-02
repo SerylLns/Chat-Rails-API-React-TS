@@ -1,10 +1,9 @@
-import ChatroomsList from "./ChatroomsList";
+import ChatroomsList from "./components/chat/ChatroomsList";
 import { useQuery } from "@tanstack/react-query";
 import { getChatrooms } from "./api/chatroomRequest";
 import { useAppDispatch } from "./store/hooks";
 import { useEffect } from "react";
 import { setChatrooms } from "./store/chatroomSlice";
-import Chat from "./Chat";
 
 const Home = () => {
   const { data, isLoading } = useQuery(["chatrooms"], getChatrooms);
